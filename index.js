@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
     res.render("index")
 })
 
-app.post("/story", async (req, res) => {
+app.get("/story", async (req, res) => {
     const story = await Story.findOne({}) // <-- finding first page of story...
     res.redirect(`/story/${story._id}`) // <-- storing the value and passing it
 })                                             // to /story page.

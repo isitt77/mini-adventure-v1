@@ -23,7 +23,8 @@ const seedDB = async () => {
             option1: "Go see what it is.",
             option2: "Keep walking...",
             nextPageA: "p2a",
-            nextPageB: "p2b"
+            nextPageB: "p2b",
+            notes: ""
         },
         {
             title: "The Shiny Object",
@@ -31,7 +32,8 @@ const seedDB = async () => {
             option1: "Open the locket.",
             option2: "Put it back down.",
             nextPageA: "p3a",
-            nextPageB: "p3b"
+            nextPageB: "p3b",
+            notes: ""
         },
         {
             title: "Moving on...",
@@ -39,7 +41,8 @@ const seedDB = async () => {
             option1: "Go back to pick it up.",
             option2: "Shrug and keep walking.",
             nextPageA: "p3c",
-            nextPageB: "p3d"
+            nextPageB: "p3d",
+            notes: ""
         }
     ])
     // const story = new Story({

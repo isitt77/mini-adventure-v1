@@ -8,7 +8,8 @@ const storySchema = new Schema({
     option1: String,
     option2: String,
     nextPageA: String,
-    nextPageB: String
+    nextPageB: String,
+    notes: String
 })
 
 const Story = mongoose.model("Story", storySchema)

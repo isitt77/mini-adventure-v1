@@ -18,27 +18,27 @@
             <%= story.title %>
         </h1>
         <h2>
-            <!-- <%= story.title %>  -->
+            <%= story.actionCode %>
         </h2>
         <p>
-            <%= story.segment %>
+            <%= story.segment1 %>
         </p>
         <div class="options">
-            <form action="/<%=story.nextPageA %>" method="GET">
-                <button id="option1">
-                    <%= story.option1 %>
+            <form action="/story/<%=story.actionA %>" method="GET">
+                <button id="optionA">
+                    <%= story.optionA %>
                 </button>
             </form>
-            <form action="/<%=story.nextPageB%>" method="GET">
-                <button id="option2">
-                    <%= story.option2 %>
+            <form action="/story/<%=story.actionB%>" method="GET">
+                <button id="optionB">
+                    <%= story.optionB %>
                 </button>
             </form>
             <!-- Optional Option 3 -->
-            <% if(story.option3){ %>
-                <form action="/<%=story.nextPageC%>" method="GET">
-                    <button id="option3">
-                        <%= story.option3 %>
+            <% if(story.optionC){ %>
+                <form action="/story/<%=story.actionC%>" method="GET">
+                    <button id="optionC">
+                        <%= story.optionC %>
                     </button>
                 </form>
                 <% } %>

@@ -38,7 +38,6 @@ app.get("/story", async (req, res) => {
 
 // I don't want the id showing in the url, but this works when I copy and paste the
 // story id from the database. But I can't find it with the code below.*
-// * Fixed. I needed to submit a post request from index.ejs with the db id attached.
 
 // Story page 1 render
 app.get("/story/:id", async (req, res) => {
@@ -47,18 +46,18 @@ app.get("/story/:id", async (req, res) => {
     res.render("story", { story })
 })
 
-// Story page 2 request form
-app.get("/story2", async (req, res) => {
-    const story2 = await Story.findOne({ _id: "6108dc5c8da8033b0f0b476c" }) // <-- finding first page of story...
-    // console.log(story2)
-    res.redirect(`/story/${story2._id}`) // <-- storing the value and passing it
-})
+// Story page 1 request form
+// app.get("/story", async (req, res) => {
+//     const story = await Story.findById({ actionCode: "1A" }) // <-- finding first page of story...
+//     // console.log(story2)
+//     res.redirect(`/story/${story._id}`) // <-- storing the value and passing it
+// })
 
-// Story page 2 render
-// app.get("/story2/:id", async (req, res) => {
+// Story page 1 render
+// app.get("/story/:id", async (req, res) => {
 //     const { id } = req.params
-//     const story2 = await Story.findById(id)
-//     res.render("story2", { story2 })
+//     const story = await Story.findById(id)
+//     res.render("story", { story })
 // })
 
 

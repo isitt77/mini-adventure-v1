@@ -46,14 +46,22 @@ app.get("/story/:id", async (req, res) => {
     res.render("story", { story })
 })
 
-// Story page 1 request form
-// app.get("/story", async (req, res) => {
-//     const story = await Story.findById({ actionCode: "1A" }) // <-- finding first page of story...
-//     // console.log(story2)
-//     res.redirect(`/story/${story._id}`) // <-- storing the value and passing it
-// })
+// Story page 1A request form
+app.get("/1A", async (req, res) => {
+    const story1A = await Story.findOne({ actionCode: "1A" }) // <-- finding first page of story...
+    // console.log(story2)
+    res.redirect(`/story/${story1A._id}`) // <-- storing the value and passing it
+})
 
-// Story page 1 render
+
+// Story page 1B request form
+app.get("/1B", async (req, res) => {
+    const story1B = await Story.findOne({ actionCode: "1B" }) // <-- finding first page of story...
+    // console.log(story2)
+    res.redirect(`/story/${story1B._id}`) // <-- storing the value and passing it
+})
+
+// Story page 1B request form
 // app.get("/story/:id", async (req, res) => {
 //     const { id } = req.params
 //     const story = await Story.findById(id)

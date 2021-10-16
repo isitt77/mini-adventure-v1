@@ -35,12 +35,12 @@
                 </button>
             </form>
             <!-- Optional Option 3 -->
-            <% //if(story.option2 ){ %>
-                <!-- <form action="/<%=//story.nextPageB%>" method="GET">
-                    <button id="option2">
-                        <%= //story.option2 %>
+            <% if(story.option3){ %>
+                <form action="/<%=story.nextPageC%>" method="GET">
+                    <button id="option3">
+                        <%= story.option3 %>
                     </button>
-                </form> -->
+                </form>
                 <% } %>
         </div>
     </div>

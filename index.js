@@ -60,8 +60,234 @@ app.get("/1B", async (req, res) => {
 })
 
 
+// Start here today...10/16/2021
+// Story page 1A2A request form
+app.get("/1A2A", async (req, res) => {
+    const story1A2A = await Story.findOne({ actionCode: "1A2A" })
+    res.redirect(`/story/${story1A2A._id}`)
+})
 
-// Deleted unnesseary code on this line...
+
+// Story page 1A2B request form
+app.get("/1A2B", async (req, res) => {
+    const story1A2B = await Story.findOne({ actionCode: "1A2B" })
+    res.redirect(`/story/${story1A2B._id}`)
+})
+
+
+// 1B2A 
+app.get("/1B2A", async (req, res) => {
+    const story1B2A = await Story.findOne({ actionCode: "1B2A" })
+    res.redirect(`/story/${story1B2A._id}`)
+})
+
+
+// 1B2B
+app.get("/1B2B", async (req, res) => {
+    const story1B2B = await Story.findOne({ actionCode: "1B2B" })
+    res.redirect(`/story/${story1B2B._id}`)
+})
+
+
+// 1A2A3A
+app.get("/1A2A3A", async (req, res) => {
+    const story1A2A3A = await Story.findOne({ actionCode: "1A2A3A" })
+    res.redirect(`/story/${story1A2A3A._id}`)
+})
+
+
+// 1A2A3B 
+app.get("/1A2A3B", async (req, res) => {
+    const story1A2A3B = await Story.findOne({ actionCode: "1A2A3B" })
+    res.redirect(`/story/${story1A2A3B._id}`)
+})
+
+
+// 1A2B3A
+app.get("/1A2B3A", async (req, res) => {
+    const story1A2B3A = await Story.findOne({ actionCode: "1A2B3A" })
+    res.redirect(`/story/${story1A2B3A._id}`)
+})
+
+
+// 1A2B3B 
+app.get("/1A2B3B", async (req, res) => {
+    const story1A2B3B = await Story.findOne({ actionCode: "1A2B3B" })
+    res.redirect(`/story/${story1A2B3B._id}`)
+})
+
+
+// 1B2A3A
+app.get("/1B2A3A", async (req, res) => {
+    const story1B2A3A = await Story.findOne({ actionCode: "1B2A3A" })
+    res.redirect(`/story/${story1B2A3A._id}`)
+})
+
+
+// 1B2A3B
+app.get("/1B2A3B", async (req, res) => {
+    const story1B2A3B = await Story.findOne({ actionCode: "1B2A3B" })
+    res.redirect(`/story/${story1B2A3B._id}`)
+})
+
+
+// 1A2A3B4A
+app.get("/1A2A3B4A", async (req, res) => {
+    const story1A2A3B4A = await Story.findOne({ actionCode: "1A2A3B4A" })
+    res.redirect(`/story/${story1A2A3B4A._id}`)
+})
+
+
+// 1A2A3B4B <-- followed by n1 in next route
+app.get("/1A2A3B4B", async (req, res) => {
+    const story1A2A3B4B = await Story.findOne({ actionCode: "1A2A3B4B" })
+    res.redirect(`/story/${story1A2A3B4B._id}`)
+})
+
+
+// 1A2A3B4Bn1  <-- follows above route
+app.get("/1A2A3B4Bn1", async (req, res) => {
+    const story1A2A3B4Bn1 = await Story.findOne({ actionCode: "1A2A3B4Bn1" })
+    res.redirect(`/story/${story1A2A3B4Bn1._id}`)
+})
+
+
+// 1A2B3A4A <-- followed by n1 in next route
+app.get("/1A2B3A4A", async (req, res) => {
+    const story1A2B3A4A = await Story.findOne({ actionCode: "1A2B3A4A" })
+    res.redirect(`/story/${story1A2B3A4A._id}`)
+})
+
+
+// 1A2B3A4An1 <-- follows above route
+app.get("/1A2B3A4An1", async (req, res) => {
+    const story1A2B3A4An1 = await Story.findOne({ actionCode: "1A2B3A4An1" })
+    res.redirect(`/story/${story1A2B3A4An1._id}`)
+})
+
+
+// 1A2B3A4An2 <-- follows above route
+app.get("/1A2B3A4An2", async (req, res) => {
+    const story1A2B3A4An2 = await Story.findOne({ actionCode: "1A2B3A4An2" })
+    res.redirect(`/story/${story1A2B3A4An2._id}`)
+})
+
+
+// 1A2B3A4B
+app.get("/1A2B3A4B", async (req, res) => {
+    const story1A2B3A4B = await Story.findOne({ actionCode: "1A2B3A4B" })
+    res.redirect(`/story/${story1A2B3A4B._id}`)
+})
+
+
+// 1B2A3A4A
+app.get("/1B2A3A4A", async (req, res) => {
+    const story1B2A3A4A = await Story.findOne({ actionCode: "1B2A3A4A" })
+    res.redirect(`/story/${story1B2A3A4A._id}`)
+})
+
+
+// 1B2A3A4B
+app.get("/1B2A3A4B", async (req, res) => {
+    const story1B2A3A4B = await Story.findOne({ actionCode: "1B2A3A4B" })
+    res.redirect(`/story/${story1B2A3A4B._id}`)
+})
+
+
+// 1B2A3B4A
+app.get("/1B2A3B4A", async (req, res) => {
+    const story1B2A3B4A = await Story.findOne({ actionCode: "1B2A3B4A" })
+    res.redirect(`/story/${story1B2A3B4A._id}`)
+})
+
+
+// 1B2A3B4B
+app.get("/1B2A3B4B", async (req, res) => {
+    const story1B2A3B4B = await Story.findOne({ actionCode: "1B2A3B4B" })
+    res.redirect(`/story/${story1B2A3B4B._id}`)
+})
+
+
+// 1A2B3A4B5A  <-- followed by n1 in next route
+app.get("/1A2B3A4B5A", async (req, res) => {
+    const story1A2B3A4B5A = await Story.findOne({ actionCode: "1A2B3A4B5A" })
+    res.redirect(`/story/${story1A2B3A4B5A._id}`)
+})
+
+
+// 1A2B3A4B5An1  <-- follows above route
+app.get("/1A2B3A4B5An1", async (req, res) => {
+    const story1A2B3A4B5An1 = await Story.findOne({ actionCode: "1A2B3A4B5An1" })
+    res.redirect(`/story/${story1A2B3A4B5An1._id}`)
+})
+
+
+// 1A2B3A4B5B
+app.get("/1A2B3A4B5B", async (req, res) => {
+    const story1A2B3A4B5B = await Story.findOne({ actionCode: "1A2B3A4B5B" })
+    res.redirect(`/story/${story1A2B3A4B5B._id}`)
+})
+
+
+// 1B2A3A4B5A
+app.get("/1B2A3A4B5A", async (req, res) => {
+    const story1B2A3A4B5A = await Story.findOne({ actionCode: "1B2A3A4B5A" })
+    res.redirect(`/story/${story1B2A3A4B5A._id}`)
+})
+
+
+// 1B2A3A4B5B   <-- followed by n1 in next route
+app.get("/1B2A3A4B5B", async (req, res) => {
+    const story1B2A3A4B5B = await Story.findOne({ actionCode: "1B2A3A4B5B" })
+    res.redirect(`/story/${story1B2A3A4B5B._id}`)
+})
+
+
+// 1B2A3A4B5Bn1  <-- Follows above route
+app.get("/1B2A3A4B5Bn1", async (req, res) => {
+    const story1B2A3A4B5Bn1 = await Story.findOne({ actionCode: "1B2A3A4B5Bn1" })
+    res.redirect(`/story/${story1B2A3A4B5Bn1._id}`)
+})
+
+
+// 1B2A3A4B5C
+app.get("/1B2A3A4B5C", async (req, res) => {
+    const story1B2A3A4B5C = await Story.findOne({ actionCode: "1B2A3A4B5C" })
+    res.redirect(`/story/${story1B2A3A4B5C._id}`)
+})
+
+
+// 1B2A3A4B5C6A   <-- followed by n1 in next route
+app.get("/1B2A3A4B5C6A", async (req, res) => {
+    const story1B2A3A4B5C6A = await Story.findOne({ actionCode: "1B2A3A4B5C6A" })
+    res.redirect(`/story/${story1B2A3A4B5C6A._id}`)
+})
+
+
+// 1B2A3A4B5C6An1   <-- Follows above route
+app.get("/1B2A3A4B5C6An1", async (req, res) => {
+    const story1B2A3A4B5C6An1 = await Story.findOne({ actionCode: "1B2A3A4B5C6An1" })
+    res.redirect(`/story/${story1B2A3A4B5C6An1._id}`)
+})
+
+
+// 1B2A3A4B5C6B     <-- followed by n1 in next route
+app.get("/1B2A3A4B5C6B", async (req, res) => {
+    const story1B2A3A4B5C6B = await Story.findOne({ actionCode: "1B2A3A4B5C6B" })
+    res.redirect(`/story/${story1B2A3A4B5C6B._id}`)
+})
+
+
+// 1B2A3A4B5C6Bn1    <-- Follows above route
+app.get("/1B2A3A4B5C6Bn1", async (req, res) => {
+    const story1B2A3A4B5C6Bn1 = await Story.findOne({ actionCode: "1B2A3A4B5C6Bn1" })
+    res.redirect(`/story/${story1B2A3A4B5C6Bn1._id}`)
+})
+
+
+
+
+
 
 
 

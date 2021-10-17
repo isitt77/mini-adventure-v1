@@ -23,25 +23,39 @@
         <p>
             <%= story.segment1 %>
         </p>
+        <p>
+            <%= story.segment2 %>
+        </p>
+        <p>
+            <%= story.segment3 %>
+        </p>
+        <p>
+            <%= story.segment4 %>
+        </p>
+        <p>
+            <%= story.segment5 %>
+        </p>
         <div class="options">
             <form action="/<%=story.actionA %>" method="GET">
                 <button id="optionA">
                     <%= story.optionA %>
                 </button>
             </form>
-            <form action="/<%=story.actionB%>" method="GET">
-                <button id="optionB">
-                    <%= story.optionB %>
-                </button>
-            </form>
-            <!-- Optional Option 3 -->
-            <% if(story.optionC){ %>
-                <form action="/<%=story.actionC%>" method="GET">
-                    <button id="optionC">
-                        <%= story.optionC %>
+            <% if(story.optionB){ %>
+                <form action="/<%=story.actionB%>" method="GET">
+                    <button id="optionB">
+                        <%= story.optionB %>
                     </button>
                 </form>
                 <% } %>
+                    <!-- Optional Option 3 -->
+                    <% if(story.optionC){ %>
+                        <form action="/<%=story.actionC%>" method="GET">
+                            <button id="optionC">
+                                <%= story.optionC %>
+                            </button>
+                        </form>
+                        <% } %>
         </div>
     </div>
 

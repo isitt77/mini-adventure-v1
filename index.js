@@ -4,6 +4,7 @@ const mongoose = require("mongoose")
 const Story = require("./models/story")
 const methodOverride = require("method-override")
 const path = require("path")
+const helmet = require("helmet")
 
 
 mongoose.connect("mongodb://localhost:27017/adventure1", { useNewUrlParser: true, useUnifiedTopology: true })
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 // Connects the path to public directory
 app.use(express.static(path.join(__dirname, "public")))
+app.use(helmet())
 
 
 app.get("/", (req, res) => {

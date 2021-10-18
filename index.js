@@ -36,9 +36,6 @@ app.get("/story", async (req, res) => {
 })                                             // to /story page.
 
 
-// I don't want the id showing in the url, but this works when I copy and paste the
-// story id from the database. But I can't find it with the code below.*
-
 // Story page 1 render
 app.get("/story/:id", async (req, res) => {
     const { id } = req.params
@@ -60,7 +57,6 @@ app.get("/1B", async (req, res) => {
 })
 
 
-// Start here today...10/16/2021
 // Story page 1A2A request form
 app.get("/1A2A", async (req, res) => {
     const story1A2A = await Story.findOne({ actionCode: "1A2A" })

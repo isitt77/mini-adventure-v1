@@ -21,8 +21,8 @@ const seedDB = async () => {
             title: "The walk home...",
             actionCode: "0",
             segment1: `It’s after dark. You’re walking home from work, but will stop at the convenience store to buy some things. As you’re walking, you see a shiny object reflecting off a nearby streetlight. Do you go see what it is? Or keep walking?`,
-            optionA: "Go see what it is.",
-            optionB: "Keep walking...",
+            optionA: "See what it is",
+            optionB: "Keep walking",
             actionA: "1A",
             actionB: "1B"
         },
@@ -79,7 +79,7 @@ const seedDB = async () => {
             segment2: `At the register, the cashier is reading the newspaper. You notice there’s a missing person posted on the counter…a woman. You haven’t seen her before, so you think nothing of it. You walk out of the store and head home.`,
             segment3: `Upon arriving, you put your things away and sit on the couch to watch TV. You catch up on a few shows you’d missed. Later, the news comes on. There’s a report of the same missing woman that you saw posted at the store. Still missing after three days.`,
             segment4: `“That’s too bad,” you think to yourself. “Hope they find her.” But, unfortunately, no one ever finds her.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -91,7 +91,7 @@ const seedDB = async () => {
             segment2: `He sends a team out with you to show them exactly where you found it. You do this. They thank you, and since you are near the store again, you go to get the things you were going to get in the first place.`,
             segment3: `Inside the store you pick up what you wanted. At the register, you notice a missing person posted on the counter…It’s the woman in the locket! You pay for your things and head home.`,
             segment4: `Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Her captor, an ex-boyfriend is shown in handcuffs and being put in a police car.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -123,7 +123,7 @@ const seedDB = async () => {
             actionCode: "1A2B3B",
             segment1: `You decide that one thing has nothing to do with the other, so you head home. Upon arriving, you put your things away and sit on the couch to watch TV. You catch up on a few shows you’d missed. Later, the news comes on. There’s a report of the same missing woman that you saw posted at the store.`,
             segment2: `“That’s too bad,” you think to yourself. “Hope they find her.” But, unfortunately, no one ever finds her.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -153,7 +153,7 @@ const seedDB = async () => {
             segment1: `You arrive at the police office and show them the locket. You explain that you were going to bring it to them as lost and found but then saw the missing person post soon after.`,
             segment2: `The officer you talk to sends a team out with you to show them exactly where you found it. You do this. They thank you and you head back home.`,
             segment3: `Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Her captor, an ex-boyfriend is shown in handcuffs and being put in a police car.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -175,7 +175,7 @@ const seedDB = async () => {
             segment1: `Later, you see a news report on TV. There is an image of the missing woman on the screen. Police officers are escorting a man in handcuffs to their car outside an abandoned house, not far from where you found the locket.`,
             segment2: `Police had found the missing woman, murdered, at the abandoned house. The man in handcuffs was an ex-boyfriend who had kept her there for three days.`,
             segment3: `“Wow,” you think. “That’s too bad… But glad they caught him.” In the back of your mind, though, you can’t help but wonder if going to the police earlier might have made a difference.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -192,7 +192,7 @@ const seedDB = async () => {
             actionA: "1A2B3A4An1",
             actionB: ""
         },
-        {   // Ending ppart 2
+        {   // Ending part 2
             title: "(Continued...)",
             actionCode: "1A2B3A4An1",
             segment1: `In the darkness, you start to see a white light. Your eyes slowly open. You’re lying in a hospital bed. On your left, are a nurse and doctor. On your right, a police officer and a man with a sketch pad.`,
@@ -207,7 +207,7 @@ const seedDB = async () => {
             actionCode: "1A2B3A4An2",
             segment1: `Later, after you are discharged from the hospital, you find out in a news article that police pursued the man who attacked you in a high speed chase that ended in a shootout, killing the man. The locket was recovered from his car. The missing woman was found later buried under an abandoned house, not far from where you’d found the locket.`,
             segment2: `“Wow,” you think. “That’s awful. But glad they caught him.”`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -231,7 +231,7 @@ const seedDB = async () => {
             segment2: `He sends a team out with you to show them exactly where you found it. You do. They thank you, and since you are near the store again, you go to get the things you were going to get in the first place.`,
             segment3: `Inside the store you pick up what you wanted. At the register, you notice a missing person posted on the counter...It’s the woman in the locket! You pay for your things and head home.`,
             segment4: ` Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Her captor, an ex-boyfriend is shown in handcuffs and being put in a police car.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -255,7 +255,7 @@ const seedDB = async () => {
             segment1: `You walk back to where you saw the locket, but to your surprise, it’s gone. You look around but don’t see anyone. You consider maybe the owner came by and found it. Anyway, it’s not here, so you head home.`,
             segment2: `Upon arriving home, you put your things away and sit on the couch to watch TV. You catch up on a few shows you’d missed. Later, the news comes on. There’s a report of the same missing woman that you saw posted at the store.`,
             segment3: `“That’s too bad,” you think to yourself. “Hope they find her.” But, unfortunately, no one ever finds her.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -265,7 +265,7 @@ const seedDB = async () => {
             actionCode: "1B2A3B4B",
             segment1: `You head home. Upon arriving, you put your things away and sit on the couch to watch TV. You catch up on a few shows you’d missed. Later, the news comes on. There’s a report of the same missing woman that you saw posted at the store.`,
             segment2: `“That’s too bad,” you think to yourself. “Hope they find her.” But, unfortunately, no one ever finds her.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -287,7 +287,7 @@ const seedDB = async () => {
             actionCode: "1A2B3A4B5An1",
             segment1: `Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Next you see the man you encountered, who according to the report, was the woman’s ex-boyfriend. Police officers are escorting him in handcuffs to their car. Apparently, it had been a very close call for the woman.`,
             segment2: `“Wow,” you think. “Good thing I got to the police when I did.”`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -298,7 +298,7 @@ const seedDB = async () => {
             segment1: `Really?? You’re going home? In spite of what you know? Well, ok. I just hope this doesn’t come back to bite you.`,
             segment2: `You head home. Upon arriving, you put your things away and sit on the couch to watch TV. You catch up on a few shows you’d missed. Later, the news comes on. There’s a report of the same missing woman that you saw posted at the store.`,
             segment3: `“Well,” you tell yourself. “I’m sure they’ll find her.” But, unfortunately, no one ever finds her. And the more time goes by, you find the more you have to keep quiet about what you know…and to continuously hope that no one ever finds the locket…which almost certainly have your fingerprints on it...`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -311,7 +311,7 @@ const seedDB = async () => {
             segment3: `The officer you talk to sends a team out with you to show them the area you’re talking about. At the location, the man is not there anymore, but he did leave footprints. They thank you and you head back home.`,
             segment4: `Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Her captor, an ex-boyfriend is shown in handcuffs and being put in a police car. It looks like the same guy you saw earlier, searching the area where you found the locket. Apparently, it had been a very close call for the woman.`,
             segment5: `“Wow,” you think. “Good thing I got to the police when I did.”`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -333,7 +333,7 @@ const seedDB = async () => {
             segment1: `Later, you see a news report on TV. There is an image of the missing woman on the screen. Police officers are escorting a man in handcuffs to their car outside an abandoned house, not far from where you found the locket. It looks like the same guy you saw earlier, when you left the store.`,
             segment2: `Police had found the missing woman, murdered, inside the abandoned house. The man in handcuffs was an ex-boyfriend who had kept her there for three days.`,
             segment3: `“Wow,” you think. “That’s too bad... But glad they caught him.” In the back of your mind, though, you can’t help but wonder if going to the police earlier might have made a difference.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -360,11 +360,11 @@ const seedDB = async () => {
             actionA: "1B2A3A4B5C6An1",
             actionB: ""
         },
-        {
+        {   // Ending
             title: "(Continued)",
             actionCode: "1B2A3A4B5C6An1",
             segment1: `Well, that is unfortunate. Normally, this is the part where you’d find out how the story ended, but…since you didn’t make it, I’m afraid this is the end.`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"
@@ -382,12 +382,12 @@ const seedDB = async () => {
             actionA: "1B2A3A4B5C6Bn1",
             actionB: ""
         },
-        {
+        {   // Ending
             title: "(Continued...)",
             actionCode: "1B2A3A4B5C6Bn1",
             segment1: `Later, you see a news report on TV that shows the missing woman being saved from an abandoned house not far from where you found the locket. Next you see the man you encountered, who according to the report, was the woman’s ex-boyfriend. Police officers are escorting him in handcuffs to their car. Apparently, it had been a very close call for the woman.`,
             segment2: `“Wow,” you think. “Good thing I got to the police when I did.”`,
-            optionA: "Home",
+            optionA: "Main page",
             optionB: "Do again",
             actionA: "",
             actionB: "story"

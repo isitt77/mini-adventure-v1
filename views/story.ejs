@@ -12,50 +12,52 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid card border-0">
         <!-- <h1>Page 1 of story...</h1> -->
-        <h1>
-            <%= story.title %>
-        </h1>
-        <h2>
-            <!-- <%= story.actionCode %> -->
-        </h2>
-        <p>
-            <%= story.segment1 %>
-        </p>
-        <p>
-            <%= story.segment2 %>
-        </p>
-        <p>
-            <%= story.segment3 %>
-        </p>
-        <p>
-            <%= story.segment4 %>
-        </p>
-        <p>
-            <%= story.segment5 %>
-        </p>
-        <div class="options">
-            <form action="/<%=story.actionA %>" method="GET">
-                <button id="optionA">
-                    <%= story.optionA %>
-                </button>
-            </form>
-            <% if(story.optionB){ %>
-                <form action="/<%=story.actionB%>" method="GET">
-                    <button id="optionB">
-                        <%= story.optionB %>
+        <div class="card-body">
+            <h1>
+                <%= story.title %>
+            </h1>
+            <h2>
+                <!-- <%= story.actionCode %> -->
+            </h2>
+            <p>
+                <%= story.segment1 %>
+            </p>
+            <p>
+                <%= story.segment2 %>
+            </p>
+            <p>
+                <%= story.segment3 %>
+            </p>
+            <p>
+                <%= story.segment4 %>
+            </p>
+            <p>
+                <%= story.segment5 %>
+            </p>
+            <div class="options">
+                <form action="/<%=story.actionA %>" method="GET">
+                    <button id="optionA" class="btn">
+                        <%= story.optionA %>
                     </button>
                 </form>
-                <% } %>
-                    <!-- Optional Option 3 -->
-                    <% if(story.optionC){ %>
-                        <form action="/<%=story.actionC%>" method="GET">
-                            <button id="optionC">
-                                <%= story.optionC %>
-                            </button>
-                        </form>
-                        <% } %>
+                <% if(story.optionB){ %>
+                    <form action="/<%=story.actionB%>" method="GET">
+                        <button id="optionB" class="btn">
+                            <%= story.optionB %>
+                        </button>
+                    </form>
+                    <% } %>
+                        <!-- Optional Option 3 -->
+                        <% if(story.optionC){ %>
+                            <form action="/<%=story.actionC%>" method="GET">
+                                <button id="optionC" class="btn">
+                                    <%= story.optionC %>
+                                </button>
+                            </form>
+                            <% } %>
+            </div>
         </div>
     </div>
 

@@ -10,8 +10,8 @@ const methodOverride = require("method-override")
 const path = require("path")
 const helmet = require("helmet")
 
-
-mongoose.connect("mongodb://localhost:27017/adventure1", { useNewUrlParser: true, useUnifiedTopology: true })
+const mongoUrl = process.env.DB_URL || "mongodb://localhost:27017/adventure1";
+mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Mongo adventure db open...")
     })

@@ -11,7 +11,7 @@ const path = require("path")
 const helmet = require("helmet")
 
 // process.env.DB_URL ||
-const mongoUrl = "mongodb://localhost:27017/adventure1";
+const mongoUrl = process.env.DB_URL || "mongodb://localhost:27017/adventure1";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Mongo adventure db open...")
@@ -293,8 +293,8 @@ app.get("/1B2A3A4B5C6Bn1", async (req, res) => {
 
 
 
+const port = process.env.PORT || 3000
 
-
-app.listen(3000, () => {
-    console.log("serving adventure on port 3000...")
+app.listen(port, () => {
+    console.log(`serving adventure on port ${port}...`)
 })

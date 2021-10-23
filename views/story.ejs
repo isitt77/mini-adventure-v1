@@ -13,9 +13,9 @@
 
 <body>
     <div class="container">
-        <div class="card border-0">
+        <div class="card border-0 row">
             <!-- <h1>Page 1 of story...</h1> -->
-            <div class="container-fluid">
+            <div class="container-fluid col-12">
                 <h1>
                     <%= story.title %>
                 </h1>
@@ -47,25 +47,25 @@
                     </button>
                 </form>
             </div>
-            <div class="col">
-                <% if(story.optionB){ %>
+            <% if(story.optionB){ %>
+                <div class="col">
                     <form action="/<%=story.actionB%>" method="GET">
                         <button id="optionB" class="btn">
                             <%= story.optionB %>
                         </button>
                     </form>
-                    <% } %>
-            </div>
-            <div class="col">
-                <!-- Optional Option 3 -->
-                <% if(story.optionC){ %>
-                    <form action="/<%=story.actionC%>" method="GET">
-                        <button id="optionC" class="btn">
-                            <%= story.optionC %>
-                        </button>
-                    </form>
-                    <% } %>
-            </div>
+                </div>
+                <% } %>
+                    <!-- Optional Option 3 -->
+                    <% if(story.optionC){ %>
+                        <div class="col">
+                            <form action="/<%=story.actionC%>" method="GET">
+                                <button id="optionC" class="btn">
+                                    <%= story.optionC %>
+                                </button>
+                            </form>
+                        </div>
+                        <% } %>
         </div>
     </div>
 

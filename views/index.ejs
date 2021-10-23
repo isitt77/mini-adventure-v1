@@ -11,17 +11,23 @@
 </head>
 
 <body>
-    <div class="container-fluid card border-0">
-        <div class="card-body">
-            <form action="/story" method="GET">
+    <div class="container">
+        <div class="card border-0 row">
+            <div class="container-fluid col-10">
                 <h1>Mini-adventure</h1>
                 <p>The decisions you make throughout this story will affect the outcome, sometimes quite
                     profoundly...But I
                     wouldn’t think
                     about that too much.</p>
                 <p>Anyway, it should only take you a few minutes to complete. Why not give it a try?</p>
-                <button class="btn">Begin story</button>
-            </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="/story" method="GET">
+                    <button class="btn">Begin story</button>
+                </form>
+            </div>
         </div>
     </div>
 

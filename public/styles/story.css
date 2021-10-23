@@ -2,6 +2,10 @@ body, .card{
     background-color: #fffcf2;
 }
 
+.container-fluid{
+    text-align: center;
+}
+
 .card{
     padding: 20px;
 }
@@ -16,7 +20,15 @@ p{
 
 .options{
     display: flex;
+    text-align: center;
+    justify-self: center;
 }
+
+/* .col{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
 
 .btn{
     background-color: #283618;  

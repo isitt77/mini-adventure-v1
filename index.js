@@ -11,7 +11,7 @@ const path = require("path")
 const helmet = require("helmet")
 
 // process.env.DB_URL ||
-const mongoUrl = process.env.DB_URL || "mongodb://localhost:27017/adventure1";
+const mongoUrl = "mongodb://localhost:27017/adventure1";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Mongo adventure db open...")

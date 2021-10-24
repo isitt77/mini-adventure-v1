@@ -20,15 +20,14 @@ p{
 }
 
 /* .options{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    max-width: 900px;
 } */
 
 .col{
     display: flex;
     text-align: center;
     justify-content: center;
+    margin: 20px;
 }
 
 .btn{

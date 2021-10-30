@@ -9,9 +9,10 @@ const Story = require("./models/story")
 const methodOverride = require("method-override")
 const path = require("path")
 const helmet = require("helmet")
+const { MongoClient } = require('mongodb');
 
 // process.env.DB_URL ||
-const mongoUrl = "mongodb://localhost:27017/adventure1";
+const mongoUrl = process.env.DB_URL || "mongodb://localhost:27017/adventure1";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Mongo adventure db open...")
@@ -19,6 +20,14 @@ mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch((err) => {
         console.log("Uh, oh. Mongo connection error!", err)
     })
+
+// MongoDB Atlas connection
+const client = new MongoClient(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+    const collection = client.db("test").collection("devices");
+    // perform actions on the collection object
+    client.close();
+});
 
 
 app.set("view engine", "ejs")

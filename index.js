@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
 
 // Request form for page 1
 app.get("/story", async (req, res) => {
-    const story = await Story.findOne({}) // <-- finding first page of story...
+    const story = await Story.findOne({ actionCode: "0" }) // <-- finding first page of story...
     // res.send(story)
     res.redirect(`/story/${story._id}`) // <-- storing the value and passing it
 })                                             // to /story page.

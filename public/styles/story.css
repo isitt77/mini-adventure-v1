@@ -2,9 +2,9 @@ body, .card{
     background-color: #fffcf2;
 }
 
-.container-fluid{
-    text-align: center;
-}
+/* .container-fluid{
+    
+} */
 
 .card{
     padding: 20px;
@@ -12,30 +12,30 @@ body, .card{
 
 h1, h2{
     color: #252422;
+    text-align: center;
 }
 
 p{
     font-size: 20px;
 }
 
-.options{
-    display: flex;
-    text-align: center;
-    justify-self: center;
-}
+/* .options{
+    max-width: 900px;
+} */
 
-/* .col{
+.col{
     display: flex;
     text-align: center;
     justify-content: center;
-} */
+    margin: 20px;
+}
 
 .btn{
     background-color: #283618;  
     color: #fffcf2;
     padding: 7px 10px;
     margin: 20px;
-    text-align: center;
+    /* text-align: center; */
     transition: .2s ease-in-out;
 }
 

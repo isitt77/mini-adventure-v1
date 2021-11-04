@@ -1,14 +1,22 @@
-body, .card{
+body{
     background-color: #fffcf2;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
 }
 
 /* .container-fluid{
-    
+position:sticky;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
 } */
 
-.card{
+/* .card{
     padding: 20px;
-}
+} */
 
 h1, h2{
     color: #252422;

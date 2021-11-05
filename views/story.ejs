@@ -38,8 +38,8 @@
                 </p>
             </div>
         </div>
-        <div class="options row">
-            <div class="col">
+        <div class="options btn-group" role="group">
+            <div class="">
                 <form action="/<%=story.actionA %>" method="GET">
                     <button id="optionA" class="btn">
                         <%= story.optionA %>
@@ -47,7 +47,7 @@
                 </form>
             </div>
             <% if(story.optionB){ %>
-                <div class="col">
+                <div class="">
                     <form action="/<%=story.actionB%>" method="GET">
                         <button id="optionB" class="btn">
                             <%= story.optionB %>
@@ -57,7 +57,7 @@
                 <% } %>
                     <!-- Optional Option 3 -->
                     <% if(story.optionC){ %>
-                        <div class="col">
+                        <div class="">
                             <form action="/<%=story.actionC%>" method="GET">
                                 <button id="optionC" class="btn">
                                     <%= story.optionC %>

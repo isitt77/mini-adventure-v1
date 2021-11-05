@@ -47,12 +47,17 @@ p{
     color: cornsilk;
     border-width: 2px;
     padding: 7px 10px;
-    margin: 20px;
+    margin: 50px;
     /* text-align: center; */
     transition: .2s ease-in-out;
 }
 
+.btn-group{
+    justify-content: center;
+}
+
 .btn:hover{
     color: #fffcf2;
+    background-color: rgba(126, 126, 126, 0.556); 
     transform: scale(1.05);
 }

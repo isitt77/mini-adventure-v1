@@ -13,31 +13,31 @@
 
 <body class="vh-100">
     <div class="container d-flex flex-column vh-100">
-        <!-- <div class=""> -->
-        <div class="container-fluid col-8">
-            <h1>
-                <%= story.title %>
-            </h1>
-            <h2>
-                <!-- <%= story.actionCode %> -->
-            </h2>
-            <p>
-                <%= story.segment1 %>
-            </p>
-            <p>
-                <%= story.segment2 %>
-            </p>
-            <p>
-                <%= story.segment3 %>
-            </p>
-            <p>
-                <%= story.segment4 %>
-            </p>
-            <p>
-                <%= story.segment5 %>
-            </p>
+        <div class="row">
+            <div class="container-fluid col-8">
+                <h1>
+                    <%= story.title %>
+                </h1>
+                <h2>
+                    <!-- <%= story.actionCode %> -->
+                </h2>
+                <p>
+                    <%= story.segment1 %>
+                </p>
+                <p>
+                    <%= story.segment2 %>
+                </p>
+                <p>
+                    <%= story.segment3 %>
+                </p>
+                <p>
+                    <%= story.segment4 %>
+                </p>
+                <p>
+                    <%= story.segment5 %>
+                </p>
+            </div>
         </div>
-        <!-- </div> -->
         <div class="options btn-group" role="group">
             <div class="">
                 <form action="/<%=story.actionA %>" method="GET">

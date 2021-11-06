@@ -30,6 +30,9 @@ p{
     font-size: 20px;
     color: rgb(252, 247, 227);
     text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+    /* You can try this, too, for outline effect on text. */
+    /* text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased; */
 }
 
 /* .options{

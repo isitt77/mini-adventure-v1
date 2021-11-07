@@ -1,9 +1,5 @@
 body{
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 /* .container{
@@ -12,8 +8,10 @@ body{
 
 
 .container-fluid{
-    margin-top: 9%;
-    vertical-align: middle;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* .card{
@@ -59,12 +57,26 @@ p{
     transition: .2s ease-in-out;
 }
 
-.btn-group{
+/* .btn-group{
     justify-content: center;
-}
+} */
 
 .btn:hover{
     color: #fffcf2;
     background-color: rgba(126, 126, 126, 0.556); 
     transform: scale(1.05);
 }
+
+/* @media(max-width:770px){
+    .options2{
+        display: block;
+        justify-content: center;
+    }
+}
+
+@media(max-width:470px){
+    .options2{
+        display: block;
+        justify-content: center;
+    }
+} */

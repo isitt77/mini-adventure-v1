@@ -1,9 +1,5 @@
 body{
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 /* .container{
@@ -11,10 +7,12 @@ body{
 } */
 
 
-/* .container-fluid{
-    margin-top: 9%;
-    vertical-align: middle;
-} */
+.container-fluid{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 /* .card{
     padding: 20px;

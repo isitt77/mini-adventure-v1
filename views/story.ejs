@@ -54,22 +54,22 @@
             <!-- button group column -->
             <div class="row text-center">
                 <div class="col-12">
-                    <div class="btn-group" role="group" aria-label="button group">
+                    <div class="btn-group form-group" role="group" aria-label="button group">
                         <form role="form" action="/<%=story.actionA%>" method="GET">
-                            <button type="button" id="optionA" class="btn">
+                            <button type="submit" id="optionA" class="btn">
                                 <%= story.optionA %>
                             </button>
                         </form>
                         <% if(story.optionB){ %>
                             <form role="form" action="/<%=story.actionB%>" method="GET">
-                                <button type="button" id="optionB" class="btn">
+                                <button type="submit" id="optionB" class="btn">
                                     <%= story.optionB %>
                                 </button>
                             </form>
                             <% } %>
                                 <% if(story.optionC){ %>
                                     <form role="form" action="/<%=story.actionC%>" method="GET">
-                                        <button type="button" id="optionC" class="btn">
+                                        <button type="submit" id="optionC" class="btn">
                                             <%= story.optionC %>
                                         </button>
                                     </form>

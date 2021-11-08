@@ -37,12 +37,12 @@ p{
     justify-content: center;
 } */
 
-.col{
+/* .col{
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 20px;
-}
+} */
 
 .btn{
     background-color: rgba(0, 0, 0, 0.883); 
@@ -52,7 +52,7 @@ p{
     text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
     border-width: 2px;
     padding: 7px 10px;
-    margin: 50px;
+    margin: 10px;
     /* text-align: center; */
     transition: .2s ease-in-out;
 }

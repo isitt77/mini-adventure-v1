@@ -52,30 +52,32 @@
             </div>
             ​
             <!-- button group column -->
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="btn-group form-group" role="group" aria-label="button group">
-                        <form role="form" action="/<%=story.actionA%>" method="GET">
-                            <button type="submit" id="optionA" class="btn">
-                                <%= story.optionA %>
+            <div class="row text-center d-flex">
+                <div class="col-sm-12 form-group">
+                    <form role="form" action="/<%=story.actionA%>" method="GET">
+                        <button type="submit" id="optionA" class="btn">
+                            <%= story.optionA %>
+                        </button>
+                    </form>
+                </div>
+                <% if(story.optionB){ %>
+                    <div class="col-sm-12 form-group">
+                        <form role="form" action="/<%=story.actionB%>" method="GET">
+                            <button type="submit" id="optionB" class="btn">
+                                <%= story.optionB %>
                             </button>
                         </form>
-                        <% if(story.optionB){ %>
-                            <form role="form" action="/<%=story.actionB%>" method="GET">
-                                <button type="submit" id="optionB" class="btn">
-                                    <%= story.optionB %>
+                        <% } %>
+                    </div>
+                    <% if(story.optionC){ %>
+                        <div class="col-sm-12 form-group">
+                            <form role="form" action="/<%=story.actionC%>" method="GET">
+                                <button type="submit" id="optionC" class="btn">
+                                    <%= story.optionC %>
                                 </button>
                             </form>
-                            <% } %>
-                                <% if(story.optionC){ %>
-                                    <form role="form" action="/<%=story.actionC%>" method="GET">
-                                        <button type="submit" id="optionC" class="btn">
-                                            <%= story.optionC %>
-                                        </button>
-                                    </form>
-                                    <% } %>
-                    </div>
-                </div>
+                        </div>
+                        <% } %>
             </div>
             ​
         </div>

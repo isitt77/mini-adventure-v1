@@ -67,17 +67,17 @@
                                 <%= story.optionB %>
                             </button>
                         </form>
-                        <% } %>
                     </div>
-                    <% if(story.optionC){ %>
-                        <div class="col-sm-12 col-md-4 col-lg-3 form-group">
-                            <form role="form" action="/<%=story.actionC%>" method="GET">
-                                <button type="submit" id="optionC" class="btn">
-                                    <%= story.optionC %>
-                                </button>
-                            </form>
-                        </div>
-                        <% } %>
+                    <% } %>
+                        <% if(story.optionC){ %>
+                            <div class="col-sm-12 col-md-4 col-lg-3 form-group">
+                                <form role="form" action="/<%=story.actionC%>" method="GET">
+                                    <button type="submit" id="optionC" class="btn">
+                                        <%= story.optionC %>
+                                    </button>
+                                </form>
+                            </div>
+                            <% } %>
             </div>
             ​
         </div>

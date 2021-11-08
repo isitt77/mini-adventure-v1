@@ -32,7 +32,7 @@
             ​
             <!-- text column-->
             <div class="row align-items-center">
-                <div class="col-lg-8 col-sm-12 offset-lg-2 mb-3">
+                <div class="col-lg-6 col-sm-10 offset-lg-3 mb-3">
                     <p>
                         <%= story.segment1 %>
                     </p>
@@ -52,8 +52,8 @@
             </div>
             ​
             <!-- button group column -->
-            <div class="row text-center justify-content-sm-center">
-                <div class="col-sm-12 col-md-4 col-lg-3 form-group">
+            <div class="row text-center justify-content-center">
+                <div class="col-sm-12 col-lg-3 form-group">
                     <form role="form" action="/<%=story.actionA%>" method="GET">
                         <button type="submit" id="optionA" class="btn">
                             <%= story.optionA %>
@@ -61,7 +61,7 @@
                     </form>
                 </div>
                 <% if(story.optionB){ %>
-                    <div class="col-sm-12 col-md-4 col-lg-3 form-group">
+                    <div class="col-sm-12 col-lg-3 form-group">
                         <form role="form" action="/<%=story.actionB%>" method="GET">
                             <button type="submit" id="optionB" class="btn">
                                 <%= story.optionB %>
@@ -70,7 +70,7 @@
                     </div>
                     <% } %>
                         <% if(story.optionC){ %>
-                            <div class="col-sm-12 col-md-4 col-lg-3 form-group">
+                            <div class="col-sm-12 col-lg-3 form-group">
                                 <form role="form" action="/<%=story.actionC%>" method="GET">
                                     <button type="submit" id="optionC" class="btn">
                                         <%= story.optionC %>

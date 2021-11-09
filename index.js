@@ -39,7 +39,17 @@ app.use(methodOverride("_method"))
 // Connects the path to public directory
 app.use(express.static(path.join(__dirname, "public")))
 app.use(mongoSanitize());
-// app.use(helmet())
+app.use(helmet())
+
+app.use(
+    helmet.contentSecurityPolicy({
+        useDefaults: true,
+        directives: {
+            "script-src": ["'self'", "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"],
+            "style-src": ["'self'", "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"],
+        },
+    })
+);
 
 
 app.get("/", (req, res) => {

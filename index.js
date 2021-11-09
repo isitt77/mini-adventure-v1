@@ -8,6 +8,7 @@ const mongoose = require("mongoose")
 const Story = require("./models/story")
 const methodOverride = require("method-override")
 const path = require("path")
+const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet")
 const { MongoClient } = require('mongodb');
 
@@ -37,6 +38,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 // Connects the path to public directory
 app.use(express.static(path.join(__dirname, "public")))
+app.use(mongoSanitize());
 // app.use(helmet())
 
 

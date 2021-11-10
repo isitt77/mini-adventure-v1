@@ -6,6 +6,7 @@ const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const Story = require("./models/story")
+const ExpressError = require("./utilities/ExpressError")
 const methodOverride = require("method-override")
 const path = require("path")
 const mongoSanitize = require('express-mongo-sanitize');
@@ -311,7 +312,18 @@ app.get("/1B2A3A4B5C6Bn1", async (req, res) => {
 
 
 
+// Page not found Error 404
+app.all("*", (req, res, next) => {
+    next(new ExpressError("Page not found.", 404))
+})
 
+// General error middleware
+app.use((err, req, res) => {
+    // res.send("Something went wrong.")
+    const { statusCode = 500 } = err
+    if (!err.message) err.message = "Oh, no. Something went wrong."
+    res.status(statusCode).render("error", { err })
+})
 
 
 const port = process.env.PORT || 3000

@@ -1,15 +1,13 @@
 body{
     background-color: black;
+}
+
+.container-fluid{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
-
-/* .container-fluid{
-    
-} */
 
 /* .container{
     margin: 20%;
@@ -48,11 +46,4 @@ p{
     color: #fffcf2;
     background-color: rgba(126, 126, 126, 0.556); 
     transform: scale(1.05);
-}
-
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-     }
 }

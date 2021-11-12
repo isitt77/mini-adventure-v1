@@ -31,17 +31,6 @@ p{
     -webkit-font-smoothing: antialiased; */
 }
 
-/* .options{
-    justify-content: center;
-} */
-
-/* .col{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
-} */
-
 .btn{
     background-color: rgba(0, 0, 0, 0.883); 
     border: rgb(252, 247, 227); 
@@ -55,26 +44,15 @@ p{
     transition: .2s ease-in-out;
 }
 
-/* .btn-group{
-    justify-content: center;
-} */
-
 .btn:hover{
     color: #fffcf2;
     background-color: rgba(126, 126, 126, 0.556); 
     transform: scale(1.05);
 }
 
-/* @media(max-width:770px){
-    .options2{
-        display: block;
-        justify-content: center;
-    }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+     }
 }
-
-@media(max-width:470px){
-    .options2{
-        display: block;
-        justify-content: center;
-    }
-} */

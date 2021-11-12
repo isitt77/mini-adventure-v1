@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
     url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -16,15 +16,16 @@ body{
 } */
 
 h1, h2, h4{
-    color: rgb(252, 247, 227);
+    /* color: rgb(252, 247, 227); */
+    color: rgb(252, 247, 227, 0.9);
     text-align: center;
-    text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
 }
 
 p{
     font-size: 20px;
-    color: rgb(252, 247, 227);
-    text-shadow: -2px -2px 1px #000, 2px -2px 1px #000, -2px 2px 1px #000, 2px 2px 1px #000;
+    color: rgb(252, 247, 227, 0.9);
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
     /* You can try this, too, for outline effect on text. */
     /* text-shadow: #000 0px 0px 1px;
     -webkit-font-smoothing: antialiased; */
@@ -43,9 +44,9 @@ p{
 
 .btn{
     background-color: rgba(0, 0, 0, 0.883); 
-    border: #fffcf2; 
+    border: rgb(252, 247, 227, 0.9); 
     border-style: solid;
-    color: rgb(252, 247, 227);
+    color: rgb(252, 247, 227, 0.9);
     text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
     border-width: 2px;
     padding: 7px 10px;

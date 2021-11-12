@@ -1,17 +1,10 @@
 body{
     background-color: black;
-}
-
-.container-fluid{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url(/images/frederico-almeida-80-IGI1mr24-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
-
-/* .container{
-    margin: 20%;
-} */
 
 h1, h2, h4{
     /* color: rgb(252, 247, 227); */

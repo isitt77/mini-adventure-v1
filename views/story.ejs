@@ -55,7 +55,7 @@
             <div class="row text-center justify-content-center">
                 <div class="col-sm-4 col-md-3 col-xl-2 form-group">
                     <form role="form" action="/<%=story.actionA%>" method="GET">
-                        <button type="submit" id="optionA" class="btn">
+                        <button type="submit" id="optionA" class="btn ripple">
                             <%= story.optionA %>
                         </button>
                     </form>
@@ -63,7 +63,7 @@
                 <% if(story.optionB){ %>
                     <div class="col-sm-4 col-md-3 col-xl-2 form-group">
                         <form role="form" action="/<%=story.actionB%>" method="GET">
-                            <button type="submit" id="optionB" class="btn">
+                            <button type="submit" id="optionB" class="btn ripple">
                                 <%= story.optionB %>
                             </button>
                         </form>
@@ -72,7 +72,7 @@
                         <% if(story.optionC){ %>
                             <div class="col-sm-4 col-md-3 col-xl-2 form-group">
                                 <form role="form" action="/<%=story.actionC%>" method="GET">
-                                    <button type="submit" id="optionC" class="btn">
+                                    <button type="submit" id="optionC" class="btn ripple">
                                         <%= story.optionC %>
                                     </button>
                                 </form>

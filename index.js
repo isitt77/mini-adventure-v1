@@ -14,7 +14,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require("helmet")
 const { MongoClient } = require('mongodb');
 
-// process.env.DB_URL ||
+
 const mongoUrl = process.env.DB_URL || "mongodb://localhost:27017/adventure1";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {

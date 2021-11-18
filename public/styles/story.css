@@ -10,6 +10,10 @@ body{
     background-repeat: no-repeat;
 }
 
+.vertical-center{
+    margin-bottom: 4%;
+}
+
 h1, h2, h4{
     /* color: rgb(252, 247, 227); */
     color: rgb(252, 247, 227);

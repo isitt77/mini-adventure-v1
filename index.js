@@ -66,7 +66,7 @@ app.get("/story", async (req, res) => {
 })                                             // to /story page.
 
 
-// Story page 1 render
+// Story show page render
 app.get("/story/:id", errorWrap(async (req, res) => {
     const { id } = req.params
     const story = await Story.findById(id)

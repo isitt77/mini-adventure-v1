@@ -13,74 +13,71 @@
 
 <body>
     <!-- full width container for bg image -->
-    <section class="container-fluid vh-100 m-0 p-0">
+    <section class="container-fluid vh-100 d-flex flex-column m-0 p-0">
         ​
         <!-- regular container for content -->
-        <div class="container vh-100 d-flex flex-column">
+        <div class="container my-auto">
 
-            <div class="vertical-center my-auto">
-
-                <!-- title column -->
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h3>
-                            <%= story.title %>
-                        </h3>
-                        <h2>
-                            <!-- <%= story.actionCode %> -->
-                        </h2>
-                    </div>
+            <!-- title column -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3>
+                        <%= story.title %>
+                    </h3>
+                    <h2>
+                        <!-- <%= story.actionCode %> -->
+                    </h2>
                 </div>
-                ​
-                <!-- text column-->
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-12 col-md-10 col-xl-7 mb-3">
-                        <p>
-                            <%= story.segment1 %>
-                        </p>
-                        <p>
-                            <%= story.segment2 %>
-                        </p>
-                        <p>
-                            <%= story.segment3 %>
-                        </p>
-                        <p>
-                            <%= story.segment4 %>
-                        </p>
-                        <p>
-                            <%= story.segment5 %>
-                        </p>
-                    </div>
+            </div>
+            ​
+            <!-- text column-->
+            <div class="row align-items-center justify-content-center">
+                <div class="col-sm-12 col-md-10 col-xl-7 mb-3">
+                    <p>
+                        <%= story.segment1 %>
+                    </p>
+                    <p>
+                        <%= story.segment2 %>
+                    </p>
+                    <p>
+                        <%= story.segment3 %>
+                    </p>
+                    <p>
+                        <%= story.segment4 %>
+                    </p>
+                    <p>
+                        <%= story.segment5 %>
+                    </p>
                 </div>
-                ​
-                <!-- button group column -->
-                <div class="row text-center justify-content-center">
+            </div>
+            ​
+            <!-- button group column -->
+            <div class="row text-center justify-content-center">
+                <div class="col-sm-4 col-md-3 col-xl-2 form-group">
+                    <form role="form" action="/<%=story.actionA%>" method="GET">
+                        <button type="submit" id="optionA" class="btn ripple">
+                            <%= story.optionA %>
+                        </button>
+                    </form>
+                </div>
+                <% if(story.optionB){ %>
                     <div class="col-sm-4 col-md-3 col-xl-2 form-group">
-                        <form role="form" action="/<%=story.actionA%>" method="GET">
-                            <button type="submit" id="optionA" class="btn ripple">
-                                <%= story.optionA %>
+                        <form role="form" action="/<%=story.actionB%>" method="GET">
+                            <button type="submit" id="optionB" class="btn ripple">
+                                <%= story.optionB %>
                             </button>
                         </form>
                     </div>
-                    <% if(story.optionB){ %>
-                        <div class="col-sm-4 col-md-3 col-xl-2 form-group">
-                            <form role="form" action="/<%=story.actionB%>" method="GET">
-                                <button type="submit" id="optionB" class="btn ripple">
-                                    <%= story.optionB %>
-                                </button>
-                            </form>
-                        </div>
-                        <% } %>
-                            <% if(story.optionC){ %>
-                                <div class="col-sm-4 col-md-3 col-xl-2 form-group">
-                                    <form role="form" action="/<%=story.actionC%>" method="GET">
-                                        <button type="submit" id="optionC" class="btn ripple">
-                                            <%= story.optionC %>
-                                        </button>
-                                    </form>
-                                </div>
-                                <% } %>
-                </div>
+                    <% } %>
+                        <% if(story.optionC){ %>
+                            <div class="col-sm-4 col-md-3 col-xl-2 form-group">
+                                <form role="form" action="/<%=story.actionC%>" method="GET">
+                                    <button type="submit" id="optionC" class="btn ripple">
+                                        <%= story.optionC %>
+                                    </button>
+                                </form>
+                            </div>
+                            <% } %>
             </div>
             ​
         </div>

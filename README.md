@@ -9,3 +9,5 @@ The overarching theme is how the small choices we make can have a profound effec
 
 On the technical side of this app, the story is stored in MongoDB Atlas (using AWS) and displayed on the frontend 
 using Embedded JavaScript (EJS). Express and Node are used in the backend. I suppose that makes this… a MEEN stack…?
+
+Hosted on Heroku (link in the about section, upper right of the page)
